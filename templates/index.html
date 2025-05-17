@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Goggins Motivational Bot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Talk to David Goggins </h1>
+      <p class="subtitle">Get raw, real, and relentless motivation</p>
+    </header>
+
+    <form method="POST" class="chat-form">
+      <textarea name="user_input" placeholder="What's holding you back?" required></textarea>
+      <button type="submit">Motivate Me</button>
+    </form>
+
+    {% if response %}
+    <div class="response">
+      <div class="avatar">DG</div>
+      <div class="message">
+        <h3>Goggins says:</h3>
+        <p>{{ response }}</p>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</body>
+</html>

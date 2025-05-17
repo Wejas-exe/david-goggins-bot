@@ -1,0 +1,125 @@
+/* Fonts */
+body {
+    margin: 0;
+    background: #0d0d0d;
+    color: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container {
+    background: #1c1c1c;
+    border-radius: 12px;
+    padding: 30px 40px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(220, 20, 60, 0.8);
+  }
+  
+  header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 0;
+    text-align: center;
+    color: #ff2e3d;
+    letter-spacing: 2px;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #bbb;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 30px;
+    font-style: italic;
+  }
+  
+  .chat-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea {
+    resize: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #2a2a2a;
+    color: #eee;
+    box-shadow: inset 0 0 5px #ff2e3d;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  textarea:focus {
+    box-shadow: inset 0 0 10px #ff2e3d;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 14px;
+    background: #ff2e3d;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 46, 61, 0.7);
+  }
+  
+  button:hover {
+    background: #e02434;
+    box-shadow: 0 8px 20px rgba(224, 36, 52, 0.9);
+  }
+  
+  .response {
+    display: flex;
+    align-items: flex-start;
+    background: #2a2a2a;
+    border-left: 5px solid #ff2e3d;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-top: 30px;
+    box-shadow: 0 0 20px rgba(255, 46, 61, 0.5);
+  }
+  
+  .avatar {
+    background: #ff2e3d;
+    color: white;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    user-select: none;
+    margin-right: 20px;
+    box-shadow: 0 0 10px #ff2e3d;
+  }
+  
+  .message h3 {
+    margin: 0 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ff2e3d;
+  }
+  
+  .message p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ddd;
+  }
+  
